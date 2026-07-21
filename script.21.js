@@ -22,38 +22,49 @@ export const marks = [45, 60, 85, 30, 95];
 export function addMark() {
     //add 70 to the end of the marks array
     // Return the updated marks array
-    marks.push
-    console.log
+    marks.push("70");
+    return(marks)
+    
     
 }
 
 // Task 2
 export function getMarksOver60() {
     // Return marks greater than 60
-    marks.getMarksOver60(marks);
-    console.log()
+    return marks.filter(mark => mark > 60);
 }
+
+
 
 // Task 3
 export function increaseMarksBy5() {
     // Return a new array where each mark is increased by 5
-    
+    return marks.map(mark => mark + 5);
 }
+
+
 
 // Task 4
 export function getTotalMarks() {
     // Return the total of all marks
+    const marks(45 + 60 + 85 + 30 + 95)
+    return(marks)
 }
 
 // Task 5
 export function findFirstMarkOver80() {
     // Return the first mark greater than 80
+    return marks.find(mark => mark > 80);
 }
+
 
 // Task 6
 export function sortMarksLowestToHighest() {
     // Return marks sorted from lowest to highest
+
+    return [...marks].sort((a, b) => a - b);
 }
+
 
 // ===========================================
 // PROVIDED FUNCTIONS
@@ -92,5 +103,7 @@ export function runTasks() {
 // ADD EVENT LISTENER
 // SECTION A 
 // ===========================================
-
-addEventListener.runTasksButton()
+runTasksButton.addEventListener("click", () =>(){
+    const runTasks = runTasksButton;
+    console.log(runTasks);
+})
